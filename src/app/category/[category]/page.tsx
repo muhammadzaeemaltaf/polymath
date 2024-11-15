@@ -11,14 +11,12 @@ import {
   searchUsers,
   searchCategories,
   User,
-  Category,
+  type Category,
 } from "../../../../libs/data";
 import { useState, useEffect } from "react";
 import Slider from "@/components/Slider";
 
 const Category = ({ params }: { params: { category: string } }) => {
-
-  console.log(params.category);
 
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
