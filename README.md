@@ -1,6 +1,12 @@
 # Polymath
 
-Polymath is a comprehensive web application designed to empower users with advanced tools for mathematical computations, data analysis, and visualization. Built with Next.js, it offers a seamless and intuitive interface for both educators and students to explore complex mathematical concepts with ease.
+Polymath Pro is a sleek and modern blog website built with Next.js. It provides a platform for sharing insightful and engaging content across various topics, catering to a wide audience.
+
+## Features
+
+- ** Responsive Design **: Seamless experience across devices.
+- ** User-Friendly Interface **: Intuitive navigation for easy content discovery.
+- ** Next.js Optimization **: Fast load times and server-side rendering.
 
 ## Installation
 
