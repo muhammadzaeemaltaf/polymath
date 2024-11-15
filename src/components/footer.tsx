@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-gray-100 text-gray-800 py-10 px-4">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         
-        <div className='grid grid-rows-[40%_auto]'>
+        <div className='grid lg:grid-rows-[40%_auto]'>
           <div className='relative'>
           <Image
               src="/polymath.svg"
@@ -19,7 +19,7 @@ const Footer = () => {
               width={200}
               height={50}
               layout="fixed"
-              className="cursor-pointer aspect-video h-[90px] absolute -left-[60px]"
+              className="cursor-pointer aspect-video h-[90px] relative lg:absolute -left-[60px]"
             />
             <Link href="/" className='absolute inset-0 w-[200px]'/>
           </div>
