@@ -4,9 +4,9 @@ Polymath Pro is a sleek and modern blog website built with Next.js. It provides 
 
 ## Features
 
-- ** Responsive Design **: Seamless experience across devices.
-- ** User-Friendly Interface **: Intuitive navigation for easy content discovery.
-- ** Next.js Optimization **: Fast load times and server-side rendering.
+- **Responsive Design**: Seamless experience across devices.
+- **User-Friendly Interface**: Intuitive navigation for easy content discovery.
+- **Next.js Optimization**: Fast load times and server-side rendering.
 
 ## Installation
 
