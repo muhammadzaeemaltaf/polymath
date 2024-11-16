@@ -40,15 +40,15 @@ const Header = () => {
     <header className="text-white border-b">
       <div className="container flex justify-between items-center py-3 text-text">
         <div className="h-[60px] w-[100px]  relative">
-            <Image
-              src="/polymath.svg"
-              alt="logo"
-              width={200}
-              height={50}
-              layout="fixed"
-              className="cursor-pointer aspect-video h-[90px] absolute right-0 -top-4"
-            />
-            <Link href="/" className='absolute inset-0 w-[100px]'/>
+          <Image
+            src="/polymath.svg"
+            alt="logo"
+            width={200}
+            height={50}
+            layout="fixed"
+            className="cursor-pointer aspect-video h-[90px] absolute right-0 -top-4"
+          />
+          <Link href="/" className="absolute inset-0 w-[100px]" />
         </div>
         <div
           ref={menuRef}
@@ -58,18 +58,33 @@ const Header = () => {
         >
           <button
             className="absolute top-4 right-4 text-2xl border rounded-md p-1 lg:hidden"
-            onClick={toggleMenu}
+            onClick={() => {
+              toggleMenu();
+              setDropdownOpen(false);
+            }}
           >
             <IoClose />
           </button>
           <ul className="flex gap-10 text-white lg:text-text text-2xl flex-col items-center lg:flex-row lg:text-lg">
             <li className="cursor-pointer transition-all duration-75 hover:text-white lg:hover:text-black">
-              <Link href={"/"} onClick={toggleMenu}>
+              <Link
+                href={"/"}
+                onClick={() => {
+                  toggleMenu();
+                  setDropdownOpen(false);
+                }}
+              >
                 Home
               </Link>
             </li>
             <li className="cursor-pointer transition-all duration-75 hover:text-white lg:hover:text-black">
-              <Link href={"/blog"} onClick={toggleMenu}>
+              <Link
+                href={"/blog"}
+                onClick={() => {
+                  toggleMenu();
+                  setDropdownOpen(false);
+                }}
+              >
                 Blog
               </Link>
             </li>
@@ -124,6 +139,28 @@ const Header = () => {
                   </ul>
                 </div>
               )}
+            </li>
+            <li className="cursor-pointer transition-all duration-75 hover:text-white lg:hover:text-black">
+              <Link
+                href={"/about"}
+                onClick={() => {
+                  toggleMenu();
+                  setDropdownOpen(false);
+                }}
+              >
+                About
+              </Link>
+            </li>
+            <li className="cursor-pointer transition-all duration-75 hover:text-white lg:hover:text-black">
+              <Link
+                href={"/contact"}
+                onClick={() => {
+                  toggleMenu();
+                  setDropdownOpen(false);
+                }}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

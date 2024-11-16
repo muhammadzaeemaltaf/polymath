@@ -59,7 +59,6 @@ const Footer = () => {
             <li className="mb-2 hover:text-theme"><Link href="/about">About</Link></li>
             <li className="mb-2 hover:text-theme"><Link href="/blog">Blog</Link></li>
             <li className="mb-2 hover:text-theme"><Link href="/contact">Contact</Link></li>
-            <li className="mb-2 hover:text-theme"><Link href="/career">Career</Link></li>
           </ul>
         </div>
 
